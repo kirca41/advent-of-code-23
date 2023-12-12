@@ -6,3 +6,7 @@ fun getLinesFromFile(fileName: String) =
 fun getCharMatrixFromFile(fileName: String) =
     getLinesFromFile(fileName)
         .map { it.toList() }
+
+fun Any.print() {
+    print(this)
+}
