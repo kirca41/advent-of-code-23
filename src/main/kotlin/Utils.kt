@@ -7,6 +7,10 @@ fun getCharMatrixFromFile(fileName: String) =
     getLinesFromFile(fileName)
         .map { it.toList() }
 
-fun Any.print() {
+fun Any?.print() {
     print(this)
+}
+
+fun Any?.println() {
+    println(this)
 }
